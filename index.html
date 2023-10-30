@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form id="formulario">
+        <label for="servico">Data</label>
+            <input type="date" id="data" name="data">
+        
+        <br> <br> <br>
+        
+        <label for="servico">Serviço</label>
+            <input type="text" id="servico" name="servico">
+        
+        <br> <br> <br>
+        
+        <label for="servico">Cliente</label>
+            <input type="text" id="cliente" name="cliente">
+        
+        <br> <br> <br>
+        
+        <select name="situacao" id="situacao">
+            <option value="Realizado">Realizado</option>
+            <option value="Cancelado">Cancelado</option>
+            <option value="Ativo">Ativo</option>
+        </select>
+        
+        <br> <br> <br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Filtrar serviço por id</h2>
+    <input type="text" name="filtro" id="filtro">
+    <button type="button" id="btnFiltrar">Filtrar</button>
+
+    <div id="resp">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
